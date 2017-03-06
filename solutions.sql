@@ -80,4 +80,3 @@ SELECT location, count(*) FROM subjects
 SELECT bk.title, count(*) AS "Number of Editions" FROM books bk
 	JOIN editions ed ON bk.id = ed.book_id
 	GROUP BY bk.title;
-SELECT * FROM editions;
